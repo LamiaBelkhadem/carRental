@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SWE401SWE2009867</string>
+    <string name="price_per_day">Price per Day: $%1$.2f</string>
+    <string name="mileage_limit">Mileage Limit: %1$d km/day</string>
+    <string name="fuel_type">Fuel Type: %1$s</string>
+    <string name="transmission_type">Transmission Type: %1$s</string>
+    <string name="number_of_seats">Number of Seats: %1$d</string>
+    <string name="availability_status">Availability Status: %1$s</string>
+
+</resources>

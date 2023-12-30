@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".CarOverview">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/carImageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        style="@style/Widget.MaterialComponents.ShapeableImageView"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.CornerSize50Percent" />
+
+    <TextView
+        android:id="@+id/carNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="Car Name" />
+
+    <!-- Following the design, the price looks like a tag, so we can use a Chip to display it -->
+    <com.google.android.material.chip.Chip
+        android:id="@+id/carPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Price per Day: $0.00"
+        android:textColor="#FFFFFF"
+        app:chipBackgroundColor="@color/colorPrimary"
+        app:chipCornerRadius="8dp"
+        app:chipEndPadding="8dp"
+        app:chipStartPadding="8dp"
+        app:chipStrokeWidth="0dp" />
+
+    <!-- Other attributes here with a cleaner look -->
+    <TextView
+        android:id="@+id/mileageLimitTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Mileage Limit: 0 km/day" />
+
+    <!-- Repeat for other attributes -->
+
+    <TextView
+        android:id="@+id/fuelTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Fuel Type: Petrol" />
+
+    <TextView
+        android:id="@+id/transmissionTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Transmission Type: Automatic" />
+
+    <TextView
+        android:id="@+id/numberOfSeatsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Number of Seats: 5" />
+
+    <TextView
+        android:id="@+id/availabilityStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Availability Status: Available" />
+
+</LinearLayout>
